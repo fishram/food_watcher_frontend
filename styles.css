@@ -1,0 +1,130 @@
+:root {
+    --color-dark-green: #386641;
+    --color-medium-green: #6A994E;
+    --color-light-green: #A7C957;
+    --color-cream: #F2E8CF;
+    --color-red: #BC4749;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.full-screen-container {
+    background-color: var(--color-light-green);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homescreen {
+    background-color: var(--color-cream);
+    box-shadow: 0 0 0 2px var(--color-dark-green);
+    padding: 40px 30px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.add-food-button {
+    padding: 10px 20px;
+    background-color: var(--color-medium-green);
+    box-shadow: 0 0 0 2px var(--color-dark-green);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.add-food-button:hover {
+    background-color: var(--color-light-green);
+    transform: scale(1.03);
+}
+
+.add-food-button:active {
+    background-color: var(--color-dark-green);
+    transform: scale(1.01);
+}
+
+.form-container {
+    background-color: var(--color-cream);
+    box-shadow: 0 0 0 2px var(--color-dark-green);
+    padding: 40px 30px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.add-food-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--color-light-green);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-food-form label {
+    font-weight: bold;
+    font-size: medium;
+    color: black;
+}
+
+.add-food-form input {
+    padding: 8px;
+    border: 1px solid var(--color-medium-green);
+    border-radius: 4px;
+    background-color: var(--color-cream);
+}
+
+.add-food-form button {
+    padding: 10px 20px;
+    background-color: var(--color-dark-green);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-food-form button:hover {
+    background-color: var(--color-medium-green);
+    transform: scale(1.03);
+}
+
+.add-food-button {
+    padding: 10px 20px;
+    background-color: var(--color-red);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-food-button:hover {
+    background-color: darkred;
+}

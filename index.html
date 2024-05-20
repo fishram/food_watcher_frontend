@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Food Watcher Front-End</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body style="background-color: white">
+        <div class="full-screen-container">
+
+            <div class="homescreen">
+
+                <div class="food-list-screen">
+                    <h1>Food List</h1>
+                    <button class="add-food-button">Add Food</button>
+                </div>
+
+                <div class="add-food-screen hidden">
+                    <h1>Add food screen</h1>
+                    <form class="add-food-form">
+                        <label for="item-name">Name of Item:</label>
+                        <input type="text" id="item-name" name="item-name" required>
+                        
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" required>
+                        
+                        <label for="expiry-date">Date it Expires:</label>
+                        <input type="date" id="expiry-date" name="expiry-date" required>
+                        
+                        <label for="location">Location:</label>
+                        <input type="text" id="location" name="location" required>
+                        
+                        <button type="submit">Add Item</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
