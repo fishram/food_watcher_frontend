@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="food-card-content">
                     <div class="food-card-left">
                         <h2 class="food-name">${foodItem.name}</h2>
-                        <p class="food-detail"><strong>Expiration Date:</strong><br> ${foodItem.expiryDate}</p>
+                        <p class="food-detail"><strong>Expires:</strong><br> ${foodItem.expiryDate}</p>
                         <p class="food-detail"><strong>Quantity:</strong> ${foodItem.quantity}</p>
                     </div>
                     <div class="food-card-right">
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <p class="food-detail"><strong>Location:</strong> ${foodItem.location}</p>
                     </div>
                 </div>
-            `;
+        `;
 
             foodCardsContainer.appendChild(foodCard);
         });
